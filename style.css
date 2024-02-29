@@ -36,8 +36,9 @@ body {
 }
 
 button {
+    position: fixed;
+    left: 42%;
     background-color: #d61d00;
-    align-self: center;
     color: white;
     border: none;
     padding: 20px 40px;
@@ -61,6 +62,9 @@ button {
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+
+    
+    
     
 }
 
@@ -98,6 +102,9 @@ footer {
     }
     p {
         color: black;
+        text-align: center;
+    }
+    div rodape {
         text-align: left;
     }
 }
