@@ -6,25 +6,38 @@
 header {
     font-family: monospace;
     text-align: center;
-    color: #134594 ;
+    justify-content: center;
+    color: black ;
+}
+div {
+    color: black;
+}
+
+article {
+  image-orientation: flip;
+  justify-content:start;
+  text-align: center;
+
 }
 
 body {
-    background-image: url(imagens/number-digital-background.webp);
-    background-color: #000;
+    background-color: #e0e0e0;
     background-size: cover;
     background-position: center;
     font-family: monospace;
-    text-shadow: 0px 0px 5px black;
-    color: #134594;
+    color: black;
+    font-size: larger;
+    text-align: center;
     img {
-        border-radius: 30px;
+        border-radius: 70%;
     }
+    
     
 }
 
 button {
     background-color: #d61d00;
+    align-self: center;
     color: white;
     border: none;
     padding: 20px 40px;
@@ -84,9 +97,7 @@ footer {
         border-radius: 12px;
     }
     p {
-        color: #134594;
-    }
-    .destacado {
         color: black;
+        text-align: left;
     }
 }
