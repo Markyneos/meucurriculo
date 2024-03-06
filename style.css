@@ -16,8 +16,12 @@ div {
 article {
   image-orientation: flip;
   justify-content:start;
-  text-align: center;
+  align-self: flex-end;
 
+}
+
+table {
+    margin: auto;
 }
 
 body {
