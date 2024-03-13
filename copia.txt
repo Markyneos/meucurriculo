@@ -1,6 +1,18 @@
-<header>
-        <h1>Marco Antonio Faustini Pessoa</h1>
-        <div class="subtitulo">
-        <h2>Aprendiz web</h2>
-        </div>
-        </header>
+It sounds like your timer is skipping seconds. This could be due to how the browser handles setTimeout. If the tab is not active, some browsers will throttle back JavaScript execution to save CPU usage, which could cause setTimeout to delay more than the specified time.
+
+To ensure accurate timing, you might want to consider using Date objects to track the start time and calculate the remaining time. This way, even if setTimeout doesn't run exactly on time, your timer will still be accurate.
+
+Here's a rough idea of how you might implement this:
+
+"var startTime = Date.now();
+var endTime = startTime + duration * 1000;
+
+function updateTimer() {
+    var now = Date.now();
+    var remaining = endTime - now;
+    // convert remaining time to minutes and seconds
+    // update display
+    // if time is up, clear timeout
+    // else, set another timeout
+}"
+Try implementing this in your code and see if it helps!

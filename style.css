@@ -39,6 +39,12 @@ body {
     
 }
 
+table, th, td {
+    border: 1px solid;
+    padding: 10px;
+    border-collapse: collapse;
+    
+}
 button {
     position: fixed;
     left: 42%;
