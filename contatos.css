@@ -1,15 +1,6 @@
 @font-face {
-    font-family: monospace;
+    font-family:monospace;
     src: url('Kode_Mono/KodeMono-VariableFont_wght.ttf') format('truetype');
-}
-
-body {
-    background-color: #e0e0e0;
-    font-family: monospace;
-}
-
-.timer {
-    font-size: 24px;
 }
 
 menu {
@@ -22,7 +13,7 @@ menu {
 }
 menu li{
     display: inline-block;
-    padding: 0 150px;
+    padding: 0 160px;
 }
 
 menu a {
@@ -33,3 +24,17 @@ menu a {
     text-justify: unset;
 }
 
+body {
+    background-color: #e0e0e0;
+    font-family: monospace;
+}
+
+article {
+    padding: 20px 30px;
+    
+}
+
+article li {
+list-style: none;
+    
+}
