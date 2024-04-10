@@ -6,36 +6,6 @@
 </head>
 
 <body>
-    <script>
-        function startTimer(duration, display) {
-            var timer = duration, minutes, seconds;
-            var timerTimeout = setTimeout(updateTimer, 1000);
-
-            function updateTimer() {
-                minutes = parseInt(timer / 60,10);
-                seconds = parseInt(timer % 60, 10);
-
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                display.textContent = minutes + ":" + seconds;
-
-                if (--timer < 0) {
-                    clearTimeout(timerTimeout);
-                } else {
-                    timerTimeout = setTimeout(updateTimer, 1000);
-                }
-            }
-
-            var timerTimeout = setTimeout(updateTimer, 1000);
-        }
-
-        
-        window.onload = function () {
-            var display = document.getElementById('timer');
-            startTimer(60 * 15, display)
-        };
-    </script>
 
 <menu>
     <a href="index.html"><li>Home</a></li>
@@ -44,11 +14,12 @@
 </menu>
 
     <header>
-        <h1>Encare o Marco por 15 minutos sem rir</h1>
-        <img src="/imagens/MAG_2623.JPG" width="700px" height="450px">
-        <div class="timer" id="timer">15:00</div>
-    <h1>Sobre mim:</h1>
-    <ul>
+        <div class="fade-in">
+        <img src="/imagens/MAG_2623.JPG" width="400">
+        </div>
+        <div class="informações">
+    <h1 class="float-in" id="título">Sobre mim:</h1>
+    <ul class="float-in">
         <li>Procuro aumentar minha experiência dentro das áreas da programação como um estagiário e auxiliar sua empresa de todas as formas que posso utilizando minha experiência prévia com administração e desenvolvimento web;</li>
         <li>Adoro aprender e ser desafiado, procuro sempre melhorar dentro do âmbito acadêmico; </li>
         <li>Entre em contato com minhas referências dentro da UVV para saber de minha conduta acadêmica; </li>
@@ -59,6 +30,7 @@
         
 
     </ul>
+    </div>
 </header>
     
 </body>

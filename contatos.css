@@ -7,7 +7,7 @@ menu {
     display: flex;
     list-style: none;
     padding: 2px 10px;
-    background-color: bisque;
+    background-color: #2c3e50;
     border-radius: 5px;
     justify-content:space-around;
 }
@@ -19,9 +19,14 @@ menu li{
 menu a {
     font-size: 22px;
     text-decoration: none;
-    color:indianred;
+    color:#4f7394;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-justify: unset;
+    transition: color 0.5s;
+}
+
+menu a:hover {
+    color: #6ea1d1;
 }
 
 body {
@@ -31,10 +36,22 @@ body {
 
 article {
     padding: 20px 30px;
-    
+    opacity: 0;
+    animation: floatInAnimation 2.5s ease-in forwards;
 }
 
 article li {
 list-style: none;
-    
+    font-size: larger;
+}
+
+@keyframes floatInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

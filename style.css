@@ -7,7 +7,7 @@ menu {
     display: flex;
     list-style: none;
     padding: 2px 10px;
-    background-color: bisque;
+    background-color: #2c3e50;
     border-radius: 5px;
     justify-content:space-around;
 }
@@ -19,9 +19,14 @@ menu li{
 menu a {
     font-size: 22px;
     text-decoration: none;
-    color:indianred;
+    color:#4f7394;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-justify: unset;
+    transition: color 0.5s;
+}
+
+menu a:hover {
+    color: #6ea1d1;
 }
 
 header {
@@ -41,8 +46,18 @@ article {
 
 }
 
-table {
-    margin: auto;
+#fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 body {
@@ -57,13 +72,6 @@ body {
         border-radius: 70%;
     }
     
-    
-}
-
-table, th, td {
-    border: 1px solid;
-    padding: 10px;
-    border-collapse: collapse;
     
 }
 
