@@ -1,11 +1,10 @@
 @font-face {
-    font-family:monospace;
-    src: url('Kode_Mono/KodeMono-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
     font-family: Playfair display;
     src: url(Fontes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+}
+
+body {
+    background-color: #e0e0e0;
 }
 
 menu {
@@ -34,39 +33,56 @@ menu a:hover {
     color: #bdbdbd;
 }
 
-body {
-    background-color: #e0e0e0;
-    font-family: Playfair display;
-}
-
-article {
-    padding: 20px 30px;
-    opacity: 0;
-    animation: floatInAnimation 2s ease-in forwards;
-}
-
-article li {
-list-style: none;
-    font-size: larger;
-}
-
-.mapa {
+img {
+    float: right;
+    padding: 0px 60px;
     border-radius: 50%;
 }
 
-.predio {
-    display: flex;
-    margin: auto;
+.informações {
+    text-align: justify;
+    padding: 150px;
+    font-size: larger;
+    position: relative;
+    font-family: Playfair display;
+}
+
+#título {
+    text-align: center;
+}
+
+.float-in {
+    opacity: 0;
+    animation: floatInAnimation 2s ease-in forwards;
 }
 
 @keyframes floatInAnimation {
     from {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateX(-100%);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
+
+header h1 {
+    padding: 0px 55px 0px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
