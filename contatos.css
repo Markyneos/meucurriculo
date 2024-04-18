@@ -39,10 +39,10 @@ body {
     font-family: Playfair display;
 }
 
-article {
+.animacao {
     padding: 20px 30px;
     opacity: 0;
-    animation: floatInAnimation 2s ease-in forwards;
+    animation: floatInAnimation 2.5s ease-in forwards;
 }
 
 article li {
@@ -52,11 +52,21 @@ list-style: none;
 
 .mapa {
     border-radius: 50%;
+    
 }
 
 .predio {
     display: flex;
     margin: auto;
+    
+}
+
+.predio img {
+    border-radius: 25px;
+}
+
+#endereco {
+    margin-top: 75px;
 }
 
 @keyframes floatInAnimation {
